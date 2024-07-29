@@ -33,6 +33,14 @@ const Sidebar: React.FC = () => {
             </Link>
           </li>
         </ul>
+
+
+<div className='bottom'>
+  
+        <Link to='/help'>
+        Ajuda </Link>
+</div>
+
       </div>
     </div>
   );

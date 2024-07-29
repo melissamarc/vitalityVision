@@ -5,6 +5,25 @@
   margin-left: 2vh;
 }
 
+
+.header{
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+.title {
+  font-size: 5vh;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.subtitulo {
+  font-size: 3vh;
+  margin-top: 0;
+}
+
 .recipe-menu {
   width: 100%;
   margin: 20px auto;
@@ -20,6 +39,7 @@
   justify-content: space-around;
   margin-bottom: 20px;
   flex-wrap: wrap;
+
 }
 
 .category-button {
@@ -30,12 +50,14 @@
   cursor: pointer;
   transition: background-color 0.3s;
   margin: 5px;
-  font-size: 3vh;
+  font-size: 2vh;
+  font-weight: bold;
+
 }
 
 .category-button.active {
-  background-color: #FFD700;
-  color: #fff;
+  background-color: #7DCD9A;
+  color: #000000;
 }
 
 .recipes {

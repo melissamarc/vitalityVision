@@ -34,40 +34,47 @@ const Recipes: React.FC = () => {
 
   return (
     <div className='container'>
+      <div className='header'>
+        <div className="text-section">
+          <h1 className='title'>
+            Receitas
+          </h1>
+          <p className='subtitulo'> Nossas sugestões são indicadas pensando especialmente em você. Escolha qual mais se adaptar ao seu cotidiano!</p>
+        </div>
 
-    <h1 className='title'>
-  Descubra nossas receitas
-</h1>
-<p className='subtitulo'> Nossas receitas são indicadas pensando especialmente em você e no seu perfil.
-Escolha qual melhor se adapta a sua realidade no cotidiano.</p>
-    <div className="recipe-menu">
-      <div className="categories">
-        {Object.keys(recipesData).map(category => (
-          <button
-            key={category}
-            className={`category-button ${selectedCategory === category ? 'active' : ''}`}
-            onClick={() => setSelectedCategory(category)}
-          >
-            {category}
-          </button>
-        ))}
+<div className='img-section'>        <img src='/recept.png' style={{ width: '40vh', height: '40vh', marginTop: 0 }} />
+ </div>
+
       </div>
-      <div className="recipes">
+
+      <div className="recipe-menu">
+        <div className="categories">
+          {Object.keys(recipesData).map(category => (
+            <button
+              key={category}
+              className={`category-button ${selectedCategory === category ? 'active' : ''}`}
+              onClick={() => setSelectedCategory(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+        <div className="recipes">
 
 
 
 
-        {recipes.map((recipe, index) => (
-          <div key={index} className="recipe-card">
-            <img src={recipe.image} alt={recipe.title} className="recipe-image" />
-            <div className="recipe-info">
-              <h3>{recipe.title}</h3>
-              <p>{recipe.description}</p>
+          {recipes.map((recipe, index) => (
+            <div key={index} className="recipe-card">
+              <img src={recipe.image} alt={recipe.title} className="recipe-image" />
+              <div className="recipe-info">
+                <h3>{recipe.title}</h3>
+                <p>{recipe.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </div> </div>
+          ))}
+        </div>
+      </div> </div>
   );
 };
 
