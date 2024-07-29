@@ -1,0 +1,17 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+    
+}
+
+.navbar-brand {
+    margin-left: 10vh;
+}
+
+.navbar-buttons {
+    margin-right: 10vh;
+}

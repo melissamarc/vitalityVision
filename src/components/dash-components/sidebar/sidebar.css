@@ -1,0 +1,45 @@
+.sidebar {
+    width: 25vh;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    background-color: #3bc25d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 3vh;
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+  }
+  
+.menu a svg {
+  margin-right: 10px;
+}
+  
+  .menu {
+    width: 100%;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .menu li {
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .menu a:hover {
+    background-color: #0da75f;
+  }

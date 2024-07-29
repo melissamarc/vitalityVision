@@ -1,0 +1,147 @@
+.hero-section {
+    text-align: center;
+    background: #47AC5D;
+    padding: 40px 20px;
+   
+    margin-bottom: 40px;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  
+  .info-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  
+  .info-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .how-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .how-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .how-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .how-button {
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .steps-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .steps-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .steps-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .steps-button {
+    background-color: #2ed573;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .steps-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .steps-images img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trust-section {
+    background: #f0f4f8;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .trust-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .trust-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trust-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
