@@ -1,1 +1,1 @@
-.env.local VITE_CLERK_PUBLISHABLE_KEY=pk_test_ZnJlc2gtc3VuYmVhbS04MC5jbGVyay5hY2NvdW50cy5kZXYk
+.env.local 
