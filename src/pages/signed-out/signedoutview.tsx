@@ -1,19 +1,20 @@
-// SignedOutView.tsx
 import React from 'react';
 import Navbar from '../../components/navbar/navbar';
-import './signed-out.css'
+import './signed-out.css';
 
 const SignedOutView: React.FC = () => {
   return (
     <div>
       <Navbar />
-     <header className="hero-section">
-        <h1>Bem vindo a Nossa Plataforma de Saúde Online!</h1>
-        <p>
-          A set of solutions designed to help quickly identify coronavirus symptoms and get reliable information regarding COVID-19 concerns.
-        </p>
-        
-      </header>
+    
+
+      <header className="hero-section">
+        <h1 className="title">Bem vindo a Nossa Plataforma de Saúde Online!</h1>
+        <p className='subtitle'> set of solutions designed to help quickly identify coronavirus symptoms and get reliable information regarding COVID-19 concerns.
+        </p> 
+      
+      </header>   
+        <div className="half-circle"></div>
 
       <section className="info-section">
         <div className="info-card">
@@ -33,36 +34,56 @@ const SignedOutView: React.FC = () => {
         </div>
       </section>
 
-      <section className="how-section">
-        <h2>How it helps people</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta ultricies vel scelerisque vitae</p>
- 
-      </section>
-
-      <section className="steps-section">
-        <h2>How to use it</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta ultricies vel scelerisque vitae</p>
-
-        <div className="steps-images">
-          <img src="coronavirus.jpg" alt="Coronavirus" />
-          <img src="diagnostics.jpg" alt="Diagnostics" />
-          <img src="test.jpg" alt="Test" />
+      <section className="services-section">
+        <h2>Our Medical Services</h2>
+        <div className="service-details">
+          <img src="doctor.jpg" alt="Doctor" />
+          <div className="service-info">
+            <h3>Dental Care Service</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus sed volutpat non.</p>
+            <button className="learn-more-button">Learn more</button>
+          </div>
         </div>
       </section>
 
-      <section className="trust-section">
-        <h2>Why you can trust this tool</h2>
-        <div className="trust-card">
-          <h3>Based on reliable sources</h3>
-          <p>
-            We want our tool to be safe and reliable, so its logic is based on the official global information provided by the WHO.
-          </p>
+      <section className="speciality-section">
+        <h2>Our Speciality</h2>
+        <div className="speciality-details">
+          <img src="online-appointment.jpg" alt="Online Appointment" />
+          <div className="speciality-info">
+            <h3>Online Appointment</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus sed volutpat non.</p>
+            <button className="learn-more-button">Learn more</button>
+          </div>
         </div>
-        <div className="trust-card">
-          <h3>Verified by doctors</h3>
-          <p>
-            The content was meticulously implemented by Infermedica's team of doctors. It is kept up to date with the latest WHO and CDC guidelines.
-          </p>
+      </section>
+
+      <section className="appointment-section">
+        <h2>Appointment Schedules</h2>
+        <div className="appointment-details">
+          <img src="appointment-schedule.jpg" alt="Appointment Schedules" />
+          <div className="appointment-info">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus sed volutpat non.</p>
+            <button className="learn-more-button">Schedules</button>
+          </div>
+        </div>
+      </section>
+
+      <section className="doctors-section">
+        <h2>Our Doctors</h2>
+        <div className="doctor-cards">
+          <div className="doctor-card">
+            <img src="doctor1.jpg" alt="Doctor 1" />
+            <h3>Mamman Bo</h3>
+          </div>
+          <div className="doctor-card">
+            <img src="doctor2.jpg" alt="Doctor 2" />
+            <h3>Reda Siana</h3>
+          </div>
+          <div className="doctor-card">
+            <img src="doctor3.jpg" alt="Doctor 3" />
+            <h3>Yaroslav Hawa</h3>
+          </div>
         </div>
       </section>
 

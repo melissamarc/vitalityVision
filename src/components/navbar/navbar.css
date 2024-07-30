@@ -3,10 +3,28 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    background-color: rgb(255, 255, 255);
     height: 10vh;
+    background-color: transparent;
+    z-index: 2;
+    position: relative;
     
 }
+
+.sign-in-button {
+    background-color: aquamarine;
+    font-family: 'Inter', sans-serif;
+}
+
+.sign-up-button {
+background-color: white;
+border-radius: 5vh;
+font-size: 3vh;
+border: 0;
+font-weight: bold;
+
+}
+
+
 
 .navbar-brand {
     margin-left: 10vh;

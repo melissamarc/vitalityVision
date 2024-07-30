@@ -14,9 +14,18 @@ const Navbar: React.FC = () => {
       </div>
 
 <div className="navbar-buttons">
+
         <SignedOut>
-          <SignInButton mode="modal" />
-          <SignUpButton mode="modal"  />
+           <SignInButton>
+        <button className='sign-in-button'>Entrar</button>
+      </SignInButton>
+
+          <SignUpButton>
+        <button className='sign-up-button'>
+          Criar Conta
+        </button>
+      </SignUpButton>
+
         </SignedOut>
 
 
