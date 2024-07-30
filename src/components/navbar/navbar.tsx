@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
 
           <SignUpButton>
         <button className='sign-up-button'>
-          Criar Conta
+          Cadastrar
         </button>
       </SignUpButton>
 
