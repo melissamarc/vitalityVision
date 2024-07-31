@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaTachometerAlt, FaUtensils, FaPlus, FaCog } from 'react-icons/fa';
+import {  FaHome, FaUtensils, FaPlus, FaCog, FaHandsHelping } from 'react-icons/fa';
 import './sidebar.css';
 
 const Sidebar: React.FC = () => {
@@ -10,36 +10,37 @@ const Sidebar: React.FC = () => {
         <ul>
           <li>
             <Link to="/dashboard">
-              <FaTachometerAlt />
-              Painel
+              <FaHome />
+
             </Link>
           </li>
           <li>
             <Link to="/recipes">
               <FaUtensils />
-              Receitas
+
             </Link>
           </li>
           <li>
             <Link to="/reifs">
               <FaPlus />
-              Adicionar Alimentos
+
             </Link>
           </li>
           <li>
             <Link to="/settings">
               <FaCog />
-              Configurações
+
             </Link>
           </li>
         </ul>
 
 
-<div className='bottom'>
-  
-        <Link to='/help'>
-        Ajuda </Link>
-</div>
+        <div className='bottom'>
+
+          <Link to='/help'>
+            <FaHandsHelping />
+          </Link>
+        </div>
 
       </div>
     </div>

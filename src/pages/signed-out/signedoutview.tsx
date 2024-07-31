@@ -1,12 +1,19 @@
 import React from 'react';
 import Navbar from '../../components/navbar/navbar';
 import './signed-out.css';
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 
-const Card: React.FC<{ title: string; description: string }> = ({ title, description }) => {
+
+interface CardProps {
+  title: string;
+  description: string;
+  imageUrl?: string;  // Adiciona a prop opcional imageUrl
+}
+
+const Card: React.FC<CardProps> = ({ title, description, imageUrl }) => {
   return (
     <div className="card">
+      {imageUrl && <img src={imageUrl}  className="card-image" />}
       <h2 className="card-title">{title}</h2>
       <p className="card-description">{description}</p>
     </div>
@@ -30,34 +37,12 @@ const SignedOutView: React.FC = () => {
 
       {/* fim da header */}
            <div className="half-circle"></div>
-        <img src="/header.png" alt="Header" className="overlay-image" />   
+
  
 
     {/*fim do circulo */}
 
-
-    <div className="cards-container">
-      <Card title="Card 1" description="Este é o texto do primeiro card." />
-      <Card title="Card 2" description="Este é o texto do segundo card." />
-      <Card title="Card 3" description="Este é o texto do terceiro card." />
-      <Card title="Card 4" description="Este é o texto do quarto card." />
-    </div>
-
-
-{/* sessao de serviços*/}
-      <section className="services-section">
-        <h2></h2>
-        <div className="service-details">
-          <img src="doctor.jpg" alt="Doctor" />
-          <div className="service-info">
-            <h3>ovo  </h3>
-            <p></p>
-            <button className="learn-more-button"></button>
-          </div>
-        </div>
-      </section>
-
-       {/* sessão com fotos */}
+  {/* sessão com fotos */}
       <section className="info-section">
         <div className="info-card">
           <img src="/patins.jpg"/>
@@ -76,27 +61,32 @@ const SignedOutView: React.FC = () => {
 
 
 
+{/* cards */}
+<div className='cards-box'>
+   <h1 className='title-container'>Sua Jornada de Saúde e Bem-Estar</h1>
+      <div className="cards-container">
+        <Card 
+          title='Monitoramento de Calorias e Nutrição' 
+          description="Este é o texto do primeiro card." 
+          imageUrl="https://example.com/path/to/image1.jpg" 
+        />
+        <Card 
+          title="Controle de Dieta e Atividades" 
+          description="Este é o texto do segundo card." 
+          imageUrl="https://example.com/path/to/image2.jpg" 
+        />
+        <Card 
+          title="Rastreamento de Alimentos e Exercícios" 
+          description="Este é o texto do terceiro card." 
+          imageUrl="https://example.com/path/to/image3.jpg" 
+        />
+      </div>
+</div>
 
 
+   
 
 
-
-
-
-
-
-
-      <section className="speciality-section">
-        <h2>drtg</h2>
-        <div className="speciality-details">
-          <img src="online-appointment.jpg" alt="Online Appointment" />
-          <div className="speciality-info">
-            <h3>dgd</h3>
-            <p>cvgfg</p>
-            <button className="learn-more-button"></button>
-          </div>
-        </div>
-      </section>
 
       <section className="appointment-section">
         <h2>fghfh</h2>
@@ -109,40 +99,10 @@ const SignedOutView: React.FC = () => {
         </div>
       </section>
 
-      <section className="doctors-section">
-        <h2></h2>
-        <div className="doctor-cards">
-          <div className="doctor-card">
-            <img src="doctor1.jpg" alt="Doctor 1" />
-            <h3>fdokjghfdjl</h3>
-          </div>
-          <div className="doctor-card">
-            <img src="doctor2.jpg" alt="Doctor 2" />
-            <h3>ekjratgjkdsf</h3>
-          </div>
-          <div className="doctor-card">
-            <img src="doctor3.jpg" alt="Doctor 3" />
-            <h3>jgfdsaf</h3>
-          </div>
-        </div>
-      </section>
 
       <footer className="footer">
       <div className="footer-container">
-        <div className="footer-social">
-          <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-            <FaFacebook className="footer-icon facebook" />
-          </a>
-          <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-            <FaTwitter className="footer-icon twitter" />
-          </a>
-          <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="footer-icon instagram" />
-          </a>
-          <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="footer-icon linkedin" />
-          </a>
-        </div>
+  
         <div className="footer-info">
           <p>&copy; {new Date().getFullYear()} Vitality Vision. Todos os direitos reservados.</p>
           <p>Contato: <a href="mailto:contato@empresa.com">vitalityvisionn@gmail.com</a></p>
