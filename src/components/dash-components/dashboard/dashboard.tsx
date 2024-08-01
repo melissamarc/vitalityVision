@@ -2,6 +2,7 @@ import React from 'react';
 import './dashboard.css'
 import DisplayDate from './date/DisplayDate';
 import { useUser } from '@clerk/clerk-react';
+import Chart from './grafic/Chart';
 
 
 
@@ -22,12 +23,12 @@ const Dashboard: React.FC = () => {
            <img src="/header.png" className='img'/>
 
 
-          
+          <Chart/>
         </div>
 
         <div className="right">
           <div className='profile-section'>
-          
+        
             
             
              </div>
