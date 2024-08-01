@@ -65,11 +65,13 @@ const SignedOutView: React.FC = () => {
 <div className='cards-box'>
    <h1 className='title-container'>Sua Jornada de Saúde e Bem-Estar</h1>
       <div className="cards-container">
+
         <Card 
           title='Monitoramento de Calorias e Nutrição' 
           description="Este é o texto do primeiro card." 
-          imageUrl="https://example.com/path/to/image1.jpg" 
+          imageUrl="/icon1.png" 
         />
+
         <Card 
           title="Controle de Dieta e Atividades" 
           description="Este é o texto do segundo card." 

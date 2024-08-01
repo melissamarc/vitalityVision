@@ -60,14 +60,27 @@
 
 /* Estilos para o card */
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   width: 55vh; /* Ajuste a largura conforme necessário */
-  height: 40vh;
+  height: 50vh;
   box-sizing: border-box; /* Para incluir padding e border no cálculo da largura */
 }
+
+.card-image {
+width: 25vh;
+height: 25vh;
+}
+
+
+
+
 
 /* Título do card */
 .card-title {
@@ -245,7 +258,7 @@
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 10px;
+  
 }
 
 /* Rodapé */
