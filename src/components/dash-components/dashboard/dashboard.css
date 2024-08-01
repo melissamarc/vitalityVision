@@ -65,3 +65,9 @@
 
 
 
+.content {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 3vh;
+}

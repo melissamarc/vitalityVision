@@ -3,6 +3,7 @@ import Dashboard from '../../components/dash-components/dashboard/dashboard';
 import Settings from '../../components/dash-components/settings/settings';
 import Sidebar from '../../components/dash-components/sidebar/sidebar';
 import Recipes from '../../components/dash-components/recipes/recipes';
+import Help from '../../components/dash-components/help/help'
 
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 
@@ -25,6 +26,7 @@ const SignedInView: React.FC = () => {
             <Route path="/recipes" element={<Recipes />} />
             <Route path="/reifs" element={<Refeicoes />} />
           <Route path="*" element={<Navigate to="/dashboard" />} />
+          <Route path="/help" element={<Help />} />
 
 
           </Routes>
