@@ -1,10 +1,14 @@
 import React from 'react';
+import './reifs.css'
 
 const Refeicoes: React.FC = () => {
   return (
-    <div>
-      <h2>Refeicoes</h2>
-    </div>
+     <div className="dashboard">
+      <div className="main">
+
+
+        </div>
+        </div>
   );
 }
 

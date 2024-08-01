@@ -1,4 +1,22 @@
-.container {
-    display: flex;
-    width: calc(100% - 200px);
+.dashboard {
+  display: flex;
+  left: 9%;
+  top: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
+
+.main {
+ display: flex;
+ right: 0;
+ width: 100%;
+ flex-direction: row;
+  background-color: #15b87a1e;
+  gap: 5%;
+}
+
+
+
+
+

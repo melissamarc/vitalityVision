@@ -27,7 +27,7 @@ margin-top: 20vh;
 .menu li {
   margin: 10px 0;
   width: 100%;
-  margin-left: 3.8vh;
+  margin-left: 3vh;
 }
 
 .menu a {
@@ -42,5 +42,5 @@ margin-top: 20vh;
 .bottom {
   margin-top: 20vh;
   font-size: 4vh;
-  margin-left: 7vh;
+  margin-left: 3vh;
 }

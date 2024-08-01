@@ -91,7 +91,7 @@ const SignedOutView: React.FC = () => {
       <section className="appointment-section">
         <h2>fghfh</h2>
         <div className="appointment-details">
-          <img src="appointment-schedule.jpg" alt="Appointment Schedules" />
+          <img src="bebenoagua.png" alt="Appointment Schedules" />
           <div className="appointment-info">
             <p>kgjnfdk</p>
             <button className="learn-more-button"></button>
