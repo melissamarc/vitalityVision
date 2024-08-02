@@ -75,12 +75,12 @@ const SignedOutView: React.FC = () => {
         <Card 
           title="Controle de Dieta e Atividades" 
           description="Este é o texto do segundo card." 
-          imageUrl="https://example.com/path/to/image2.jpg" 
+          imageUrl="/icon2.png"
         />
         <Card 
           title="Rastreamento de Alimentos e Exercícios" 
           description="Este é o texto do terceiro card." 
-          imageUrl="https://example.com/path/to/image3.jpg" 
+          imageUrl="/icon3.png" 
         />
       </div>
 </div>
@@ -90,15 +90,16 @@ const SignedOutView: React.FC = () => {
 
 
 
-      <section className="appointment-section">
-        <h2>fghfh</h2>
-        <div className="appointment-details">
-          <img src="bebenoagua.png" alt="Appointment Schedules" />
-          <div className="appointment-info">
-            <p>kgjnfdk</p>
-            <button className="learn-more-button"></button>
+      <section className="texto-imagem">
+        <div className="imagem">  
+          <img src="bebenoagua.png" alt="Appointment Schedules" /> 
           </div>
-        </div>
+       
+          <div className="texto">
+           <p className='title'> Titulo </p>
+            <p>Paragrafo com descrição </p>
+            <button className="saiba-mais"> Saiba mais </button>
+     </div>
       </section>
 
 

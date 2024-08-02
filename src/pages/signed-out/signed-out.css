@@ -196,70 +196,13 @@ height: 25vh;
   margin-bottom: 10px;
 }
 
-/* Seção de agendamento */
-.appointment-section {
-  background: #F4F9FF;
-  padding: 40px 20px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-/* Detalhes do agendamento */
-.appointment-details {
+.texto-imagem {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
-/* Estilos para a imagem dos detalhes do agendamento */
-.appointment-details img {
-  width: 150px;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-/* Informações do agendamento */
-.appointment-info {
-  text-align: left;
-}
-
-.appointment-info p {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-/* Seção de médicos */
-.doctors-section {
-  background: #FFFFFF;
-  padding: 40px 20px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-/* Cards de médicos */
-.doctor-cards {
-  display: flex;
-  justify-content: space-around;
-}
-
-/* Card de médico */
-.doctor-card {
-  background: #F0F4F8;
-  border-radius: 10px;
-  padding: 20px;
-  width: 30%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-/* Estilos para a imagem do card de médico */
-.doctor-card img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  
-}
 
 /* Rodapé */
 .footer {
