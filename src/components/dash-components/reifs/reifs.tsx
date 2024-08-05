@@ -201,7 +201,7 @@ const Refeicoes: React.FC = () => {
                 </div>
               </div>
               <div className="progress-bar">
-                <span>Carboidratos: {combinedNutritionalValues.totalCarbohydrates} g</span>
+                <span>Carboidratos: {combinedNutritionalValues.totalCarbohydrates}</span>
                 <div className="progress">
                   <div className="progress-bar-fill" style={{ width: `${combinedNutritionalValues.totalCarbohydrates}px` }}></div>
                 </div>

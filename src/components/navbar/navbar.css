@@ -18,19 +18,28 @@
     margin-right: 2vh;
     display: flex;
     justify-content: space-between;
-    width: 10%;
-    gap: 2vh;
+    width: 12%;
+   
 }
 
-.sign-in-button, .sign-up-button {
-    font-size: 2.3vh;
-    width: 15vh;
+.sign-in-button {
+    background-color: white;
+    width: 10vh;
     font-weight: bold;
-    background-color: #6aa37f;
-    color: white;
-    height: 5vh;
+    color: #7dcd9a;
     padding: 10;
     border-radius: 2vh;
     border: 0;
+
 }
 
+.sign-up-button {
+    background-color: transparent;
+    border: 1px solid white;
+    font-weight: bold;
+    color: white;
+    padding: 10;
+    border-radius: 2vh;
+    height: 4vh;
+ 
+}

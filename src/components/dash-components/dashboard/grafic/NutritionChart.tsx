@@ -25,7 +25,7 @@ const NutritionalChart: React.FC<NutritionalChartProps> = ({ nutritionalValues }
           nutritionalValues.totalVitamins,
           nutritionalValues.totalCarbohydrates
         ],
-        backgroundColor: ['#36A2EB', '#FFCE56', '#4BC0C0'],
+        backgroundColor: ['#72BBFF', '#FEF074', '#FCA1FE'],
         borderColor: '#fff',
         borderWidth: 1,
       }

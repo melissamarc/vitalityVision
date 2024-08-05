@@ -11,6 +11,7 @@
   align-items: flex-start; /* Corrigido de 'left' para 'flex-start' */
   width: 100%;
   top: 0;
+  box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total */
 }
 
 /* Estilos para o botão de início */
@@ -20,10 +21,11 @@
   font-size: 2.6vh;
   font-weight: bold;
   width: 15vh;
-  padding: 10px; /* Corrigido para incluir 'px' */
+  padding: 10px;
   border-radius: 10vh;
   margin-left: 10vh;
   border: 0;
+  box-sizing: border-box;
 }
 
 /* Estilos para o título */
@@ -32,6 +34,7 @@
   text-align: left;
   margin-left: 10vh;
   max-width: 70vh;
+  box-sizing: border-box;
 }
 
 /* Estilos para o subtítulo */
@@ -40,6 +43,7 @@
   margin-left: 10vh;
   text-align: left;
   max-width: 70vh;
+  box-sizing: border-box;
 }
 
 /* Container de título */
@@ -56,6 +60,7 @@
   margin-left: 15vh;
   margin-right: 15vh;
   margin-bottom: 20vh;
+  box-sizing: border-box;
 }
 
 /* Estilos para o card */
@@ -74,13 +79,9 @@
 }
 
 .card-image {
-width: 25vh;
-height: 25vh;
+  width: 25vh;
+  height: 25vh;
 }
-
-
-
-
 
 /* Título do card */
 .card-title {
@@ -100,6 +101,7 @@ height: 25vh;
   display: flex;
   justify-content: space-around;
   margin-bottom: 20vh;
+  box-sizing: border-box;
 }
 
 /* Card de informações */
@@ -109,6 +111,7 @@ height: 25vh;
   padding: 20px;
   text-align: center;
   width: 30%;
+  box-sizing: border-box;
 }
 
 /* Estilos para a imagem do card de informações */
@@ -125,6 +128,7 @@ height: 25vh;
   padding: 40px 20px;
   text-align: center;
   margin-bottom: 40px;
+  box-sizing: border-box;
 }
 
 /* Detalhes dos serviços */
@@ -165,6 +169,7 @@ height: 25vh;
 .speciality-section {
   text-align: center;
   margin-bottom: 40px;
+  box-sizing: border-box;
 }
 
 /* Detalhes das especialidades */
@@ -203,7 +208,6 @@ height: 25vh;
   justify-content: center;
 }
 
-
 /* Rodapé */
 .footer {
   text-align: center;
@@ -212,6 +216,7 @@ height: 25vh;
   background-color: #7DCD9A;
   color: white;
   font-weight: bold;
+  box-sizing: border-box;
 }
 
 .footer-info {
@@ -225,7 +230,7 @@ height: 25vh;
 
 /* Meio círculo */
 .half-circle {
- position: absolute;
+  position: absolute;
   top: 0;
   right: 0;
   width: 50%;
@@ -354,4 +359,9 @@ height: 25vh;
     width: 20vh;
     height: 20vh;
   }
+}
+
+/* Evita overflow horizontal */
+body {
+  overflow-x: hidden;
 }
