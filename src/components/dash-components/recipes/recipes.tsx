@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './recipes.css'
 import RecipeCard from './recipecard';
 import RecipeDetails from './recipedetails';
@@ -14,7 +14,7 @@ interface Recipe {
 
 
 const Recipes: React.FC = () => {
-const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
+  const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
 
   const recipes: Recipe[] = [
     {
@@ -39,42 +39,22 @@ const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
       <div className="main">
 
         <div className="left">
-    
-
-
-
-
-
-
-  
-    <div className='styles.app'>
-      <div className='styles.container'>
-        {recipes.map((recipe, index) => (
-          <RecipeCard key={index} recipe={recipe} onClick={setSelectedRecipe} />
-        ))}
-      </div>
-      <RecipeDetails recipe={selectedRecipe} />
-    </div>
- 
-
-
-
-
+          {recipes.map((recipe, index) => (
+            <RecipeCard key={index} recipe={recipe} onClick={setSelectedRecipe} />
+          ))}
         </div>
-
-        <div className="right">
-          <div className='profile-section'>
-        
-      
-          
-            
-             </div>
-        </div>
-
-
-
       </div>
+
+      <div className="right">
+        <div className='profile-section'>
+          <RecipeDetails recipe={selectedRecipe} />
+        </div>
+      </div>
+
+
+
     </div>
+
 
   );
 }

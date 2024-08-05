@@ -1,4 +1,4 @@
-// RecipeCard.tsx
+
 import React from 'react';
 import './recipes.css'
 

@@ -1,4 +1,4 @@
-
+import './recipes.css'
 import React from 'react';
 
 interface Recipe {
