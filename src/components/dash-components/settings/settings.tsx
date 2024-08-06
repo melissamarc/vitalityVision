@@ -4,10 +4,13 @@ import './settings.css'
 
 const Settings: React.FC = () => {
   return (
-    <div className='container'>
-      <h2>Settings</h2>
-      
-    </div>
+     <div className="dashboard">
+      <div className="main">
+
+
+        
+        </div>
+        </div>
   );
 }
 

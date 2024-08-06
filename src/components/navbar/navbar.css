@@ -11,9 +11,35 @@
 }
 
 .navbar-brand {
-    margin-left: 8.1vh;
+    margin-left: 7.5vh;
 }
 
 .navbar-buttons {
-    margin-right: 5vh;
+    margin-right: 2vh;
+    display: flex;
+    justify-content: space-between;
+    width: 12%;
+   
+}
+
+.sign-in-button {
+    background-color: white;
+    width: 10vh;
+    font-weight: bold;
+    color: #7dcd9a;
+    padding: 10;
+    border-radius: 2vh;
+    border: 0;
+
+}
+
+.sign-up-button {
+    background-color: transparent;
+    border: 1px solid white;
+    font-weight: bold;
+    color: white;
+    padding: 10;
+    border-radius: 2vh;
+    height: 4vh;
+ 
 }

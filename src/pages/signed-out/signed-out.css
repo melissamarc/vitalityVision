@@ -11,6 +11,7 @@
   align-items: flex-start; /* Corrigido de 'left' para 'flex-start' */
   width: 100%;
   top: 0;
+  box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total */
 }
 
 /* Estilos para o botão de início */
@@ -20,10 +21,11 @@
   font-size: 2.6vh;
   font-weight: bold;
   width: 15vh;
-  padding: 10px; /* Corrigido para incluir 'px' */
+  padding: 10px;
   border-radius: 10vh;
   margin-left: 10vh;
   border: 0;
+  box-sizing: border-box;
 }
 
 /* Estilos para o título */
@@ -32,6 +34,7 @@
   text-align: left;
   margin-left: 10vh;
   max-width: 70vh;
+  box-sizing: border-box;
 }
 
 /* Estilos para o subtítulo */
@@ -40,6 +43,7 @@
   margin-left: 10vh;
   text-align: left;
   max-width: 70vh;
+  box-sizing: border-box;
 }
 
 /* Container de título */
@@ -56,17 +60,27 @@
   margin-left: 15vh;
   margin-right: 15vh;
   margin-bottom: 20vh;
+  box-sizing: border-box;
 }
 
 /* Estilos para o card */
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   width: 55vh; /* Ajuste a largura conforme necessário */
-  height: 40vh;
+  height: 50vh;
   box-sizing: border-box; /* Para incluir padding e border no cálculo da largura */
+}
+
+.card-image {
+  width: 25vh;
+  height: 25vh;
 }
 
 /* Título do card */
@@ -87,6 +101,7 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 20vh;
+  box-sizing: border-box;
 }
 
 /* Card de informações */
@@ -96,6 +111,7 @@
   padding: 20px;
   text-align: center;
   width: 30%;
+  box-sizing: border-box;
 }
 
 /* Estilos para a imagem do card de informações */
@@ -112,6 +128,7 @@
   padding: 40px 20px;
   text-align: center;
   margin-bottom: 40px;
+  box-sizing: border-box;
 }
 
 /* Detalhes dos serviços */
@@ -152,6 +169,7 @@
 .speciality-section {
   text-align: center;
   margin-bottom: 40px;
+  box-sizing: border-box;
 }
 
 /* Detalhes das especialidades */
@@ -183,69 +201,11 @@
   margin-bottom: 10px;
 }
 
-/* Seção de agendamento */
-.appointment-section {
-  background: #F4F9FF;
-  padding: 40px 20px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-/* Detalhes do agendamento */
-.appointment-details {
+.texto-imagem {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
-}
-
-/* Estilos para a imagem dos detalhes do agendamento */
-.appointment-details img {
-  width: 150px;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-/* Informações do agendamento */
-.appointment-info {
-  text-align: left;
-}
-
-.appointment-info p {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-/* Seção de médicos */
-.doctors-section {
-  background: #FFFFFF;
-  padding: 40px 20px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-/* Cards de médicos */
-.doctor-cards {
-  display: flex;
-  justify-content: space-around;
-}
-
-/* Card de médico */
-.doctor-card {
-  background: #F0F4F8;
-  border-radius: 10px;
-  padding: 20px;
-  width: 30%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-/* Estilos para a imagem do card de médico */
-.doctor-card img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
+  justify-content: center;
 }
 
 /* Rodapé */
@@ -256,6 +216,7 @@
   background-color: #7DCD9A;
   color: white;
   font-weight: bold;
+  box-sizing: border-box;
 }
 
 .footer-info {
@@ -269,7 +230,7 @@
 
 /* Meio círculo */
 .half-circle {
- position: absolute;
+  position: absolute;
   top: 0;
   right: 0;
   width: 50%;
@@ -398,4 +359,9 @@
     width: 20vh;
     height: 20vh;
   }
+}
+
+/* Evita overflow horizontal */
+body {
+  overflow-x: hidden;
 }

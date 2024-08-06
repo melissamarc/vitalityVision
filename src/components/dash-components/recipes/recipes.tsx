@@ -1,81 +1,62 @@
 import React, { useState } from 'react';
 import './recipes.css'
+import RecipeCard from './recipecard';
+import RecipeDetails from './recipedetails';
+
 
 interface Recipe {
-  title: string;
-  description: string;
+  name: string;
   image: string;
+  description: string;
+  ingredients: string[];
+  instructions: string;
 }
 
-const recipesData: { [key: string]: Recipe[] } = {
-  'Café da Manhã': [
-    { title: 'Panquecas', description: 'Deliciosas panquecas caseiras.', image: 'https://via.placeholder.com/150' },
-    { title: 'Smoothie Bowl', description: 'Tigela de smoothie saudável.', image: 'https://via.placeholder.com/150' },
-    { title: 'Ovos Mexidos', description: 'Ovos mexidos com torradas.', image: 'https://via.placeholder.com/150' },
-    { title: 'Muffins', description: 'Muffins de blueberry.', image: 'https://via.placeholder.com/150' },
-  ],
-  'Almoço': [
-    { title: 'Salada Caesar', description: 'Salada Caesar clássica.', image: 'https://via.placeholder.com/150' },
-    { title: 'Sopa de Tomate', description: 'Sopa de tomate fresca.', image: 'https://via.placeholder.com/150' },
-    { title: 'Sanduíche de Frango', description: 'Sanduíche de frango grelhado.', image: 'https://via.placeholder.com/150' },
-    { title: 'Quiche', description: 'Quiche de espinafre.', image: 'https://via.placeholder.com/150' },
-  ],
-  'Jantar': [
-    { title: 'Spaghetti', description: 'Spaghetti à bolonhesa.', image: 'https://via.placeholder.com/150' },
-    { title: 'Hambúrguer', description: 'Hambúrguer artesanal.', image: 'https://via.placeholder.com/150' },
-    { title: 'Pizza', description: 'Pizza de pepperoni.', image: 'https://via.placeholder.com/150' },
-    { title: 'Salmão', description: 'Salmão grelhado.', image: 'https://via.placeholder.com/150' },
-  ],
-};
 
 const Recipes: React.FC = () => {
-  const [selectedCategory, setSelectedCategory] = useState<string>('Café da Manhã');
-  const recipes = recipesData[selectedCategory];
+  const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
+
+  const recipes: Recipe[] = [
+    {
+      name: 'Bolo de Chocolate',
+      image: 'https://example.com/bolo-de-chocolate.jpg',
+      description: 'Um delicioso bolo de chocolate...',
+      ingredients: ['2 xícaras de farinha', '1 xícara de açúcar', '1 xícara de chocolate em pó', '3 ovos', '1 xícara de leite'],
+      instructions: 'Misture todos os ingredientes...',
+    },
+    {
+      name: 'Lasanha',
+      image: 'https://example.com/lasanha.jpg',
+      description: 'Uma saborosa lasanha...',
+      ingredients: ['500g de carne moída', '2 xícaras de molho de tomate', '500g de massa para lasanha', '200g de queijo mussarela', '100g de queijo parmesão'],
+      instructions: 'Monte as camadas da lasanha...',
+    },
+  ];
+
 
   return (
-    <div className='container'>
-      <div className='header'>
-        <div className="text-section">
-          <h1 className='title'>
-            Receitas
-          </h1>
-          <p className='subtitulo'> Nossas sugestões são indicadas pensando especialmente em você. Escolha qual mais se adaptar ao seu cotidiano!</p>
+    <div className="dashboard">
+      <div className="main">
+
+        <div className="left">
+          {recipes.map((recipe, index) => (
+            <RecipeCard key={index} recipe={recipe} onClick={setSelectedRecipe} />
+          ))}
         </div>
-
-<div className='img-section'>        <img src='/recept.png' style={{ width: '40vh', height: '40vh', marginTop: 0 }} />
- </div>
-
       </div>
 
-      <div className="recipe-menu">
-        <div className="categories">
-          {Object.keys(recipesData).map(category => (
-            <button
-              key={category}
-              className={`category-button ${selectedCategory === category ? 'active' : ''}`}
-              onClick={() => setSelectedCategory(category)}
-            >
-              {category}
-            </button>
-          ))}
+      <div className="right">
+        <div className='profile-section'>
+          <RecipeDetails recipe={selectedRecipe} />
         </div>
-        <div className="recipes">
+      </div>
 
 
 
+    </div>
 
-          {recipes.map((recipe, index) => (
-            <div key={index} className="recipe-card">
-              <img src={recipe.image} alt={recipe.title} className="recipe-image" />
-              <div className="recipe-info">
-                <h3>{recipe.title}</h3>
-                <p>{recipe.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div> </div>
+
   );
-};
+}
 
 export default Recipes;

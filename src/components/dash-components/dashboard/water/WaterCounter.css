@@ -1,0 +1,49 @@
+
+.water-counter {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  
+  
+.text-water {
+    display: flex;
+    justify-content: space-around;
+    font-size: 3vh;
+  font-weight: bold;
+}
+  .water-glasses {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .water-row {
+    display: flex;
+    justify-content: center;
+    gap: 3vh;
+  }
+  
+  .water-row + .water-row {
+    margin-top: 10px;
+  }
+  
+  .water-glass {
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  
+  .water-glass.filled {
+    color: #00f; /* Azul quando preenchido */
+  }
+  
+  .water-glass.empty {
+    color: #aaa; /* Cinza quando vazio */
+  }
+  

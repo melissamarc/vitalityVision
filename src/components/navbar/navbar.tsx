@@ -1,4 +1,4 @@
-// Navbar.tsx
+
 import React from 'react';
 import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from "@clerk/clerk-react";
 import './navbar.css';
@@ -6,10 +6,11 @@ import './navbar.css';
 
 
 const Navbar: React.FC = () => {
+  
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-     <img src="logo.png" alt="Triage"  width={"25vh"} height={"25vh"}/>
+     <img src="logo.png" alt="Triage"  width={"35vh"} height={"35vh"}/>
   
       </div>
 
@@ -30,7 +31,9 @@ const Navbar: React.FC = () => {
 
 
         <SignedIn>
+       
           <UserButton />
+       
         </SignedIn>
       </div>
     </nav>
