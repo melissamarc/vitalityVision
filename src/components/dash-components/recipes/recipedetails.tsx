@@ -19,9 +19,9 @@ const RecipeDetails: React.FC<RecipeDetailsProps> = ({ recipe }) => {
   }
 
   return (
-    <div className="styles.details">
+    <div className="details-style">
       <h2>{recipe.name}</h2>
-      <img src={recipe.image} alt={recipe.name} className='styles.image2'/>
+      <img src={recipe.image} alt={recipe.name} className='details-image'/>
       <p>{recipe.description}</p>
       <ul>
         {recipe.ingredients.map((ingredient, index) => (
