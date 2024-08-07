@@ -7,7 +7,7 @@ const Settings: React.FC = () => {
      <div className="dashboard">
       <div className="main">
 
-
+<h1> configurações </h1>
         
         </div>
         </div>
