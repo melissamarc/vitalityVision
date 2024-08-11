@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {  FaHome, FaUtensils, FaPlus, FaCog, FaHandsHelping } from 'react-icons/fa';
+import {  FaHome, FaUtensils, FaPlus  , FaHandsHelping } from 'react-icons/fa';
 import './sidebar.css';
 
 const Sidebar: React.FC = () => {
@@ -26,12 +26,7 @@ const Sidebar: React.FC = () => {
 
             </Link>
           </li>
-          <li>
-            <Link to="/settings">
-              <FaCog />
-
-            </Link>
-          </li>
+         
         </ul>
 
 

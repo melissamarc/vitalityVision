@@ -4,7 +4,6 @@ import Settings from '../../components/dash-components/settings/settings';
 import Sidebar from '../../components/dash-components/sidebar/sidebar';
 import Recipes from '../../components/dash-components/recipes/recipes';
 import Help from '../../components/dash-components/help/help';
-import Notificacoes from '../../components/dash-components/settings/notificoes/notificacoes';
 import Permissoes from '../../components/dash-components/settings/permissoes/permissoes';
 import PrivacidadeDados from '../../components/dash-components/settings/privacidadeDados/privacidadeDados';
 import Seguranca from '../../components/dash-components/settings/seguranca/seguranca';
@@ -32,13 +31,12 @@ const SignedInView: React.FC = () => {
           <Route path="*" element={<Navigate to="/dashboard" />} />
           <Route path="/help" element={<Help />} />
           
-          // configurações do app 
+         {/* Link para Configurações, porem essa tela no existe mais se caso for edd so linkar ela na pasta sidebar */}
           <Route path="/settings" element={<Settings />} />
-              <Route path="/notificacoes" element={<Notificacoes />} />
               <Route path="/permissoes" element={<Permissoes />} />
               <Route path="/privacidadeDados" element={<PrivacidadeDados />} />
               <Route path="/seguranca" element={<Seguranca />} />
-
+        {/* acaba aqui*/}
 
           </Routes>
         </div>

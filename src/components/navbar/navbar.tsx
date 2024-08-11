@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from "@clerk/clerk-react";
+import { SignedIn, SignedOut, SignInButton, SignUpButton } from "@clerk/clerk-react";
 import './navbar.css';
 
 
@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
 
         <SignedIn>
        
-          <UserButton />
+          
        
         </SignedIn>
       </div>

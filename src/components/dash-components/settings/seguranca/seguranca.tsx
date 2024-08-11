@@ -2,7 +2,7 @@ import './seguranca.css'
 
 const seguranca = () => {
   return (
-    <div>seguranca</div>
+    <div>segurança</div>
   )
 }
 

@@ -1,7 +1,7 @@
 import React, {useState, useEffect }from 'react';
 import './dashboard.css'
 import DisplayDate from './date/DisplayDate';
-import { useUser } from '@clerk/clerk-react';
+import { UserButton, useUser } from '@clerk/clerk-react';
 import NutritionalChart from './grafic/NutritionChart';
 
 interface NutritionalValues {
@@ -59,7 +59,7 @@ const Dashboard: React.FC = () => {
           </div>
           <img src="/header.png" className='img' />
           <div className='content'>
-<div>
+<div className='Nutri'>
       <h1>Resumo Nutricional</h1>
       <NutritionalChart nutritionalValues={combinedNutritionalValues} />
     </div>
@@ -70,7 +70,26 @@ const Dashboard: React.FC = () => {
         <div className="right">
           <div className='profile-section'>
 
+          <UserButton appearance={{
+    elements: {
+      avatarBox: {
+        backgroundColor: "#007bff", // Cor de fundo do avatar
+        borderRadius: "50%", // Deixa o avatar redondo
+        border: "2px solid #fff", // Borda branca ao redor do avatar
+        width: "100px", // Largura do avatar (aumenta o tamanho da bolinha)
+        height: "100px", // Altura do avatar (aumenta o tamanho da bolinha)
+        marginTop: "30px", // desgruda do teto
+      },
+      avatarImage: {
+        borderRadius: "50%", // Garante que a imagem do avatar também seja redonda
+        width: "100%", // Faz a imagem preencher o contêiner
+        height: "100%", // Faz a imagem preencher o contêiner
+      },
+    },
+  }} 
+/>
 
+<p>{user?.username}</p>
 
 
           </div>

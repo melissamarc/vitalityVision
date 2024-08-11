@@ -1,22 +1,18 @@
-.dashboard {
+
+.Title {
+height: 100%;
+position: absolute;
+top:0px;
+}
+.navbarmenu {
+  height: 50px;
+  width: 100%;
   display: flex;
-  left: 9%;
-  top: 0;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  background-color: aquamarine;
+  align-items:center 
 }
 
-.main {
- display: flex;
- right: 0;
- width: 100%;
- flex-direction: row;
-  background-color: #15b87a1e;
-  gap: 5%;
-}
-
-
+ 
 
 
 
