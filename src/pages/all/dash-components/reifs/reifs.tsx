@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import api from './services/api';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import NutritionalChart from '../dashboard/grafic/NutritionChart';
+import NutritionalChart from '../../../../components/grafic/NutritionChart';
 import './reifs.css';
 
 interface Food {

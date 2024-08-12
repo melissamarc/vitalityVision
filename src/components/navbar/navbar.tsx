@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { SignedIn, SignedOut, SignInButton, SignUpButton } from "@clerk/clerk-react";
 import './navbar.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -16,25 +16,13 @@ const Navbar: React.FC = () => {
 
 <div className="navbar-buttons">
 
-        <SignedOut>
-           <SignInButton>
-        <button className='sign-in-button'>Entrar</button>
-      </SignInButton>
-
-          <SignUpButton>
+        
+        <Link to='/SignIn' className='sign-in-button'>Entrar</Link>
+     
         <button className='sign-up-button'>
           Cadastrar
         </button>
-      </SignUpButton>
-
-        </SignedOut>
-
-
-        <SignedIn>
-       
-          
-       
-        </SignedIn>
+    
       </div>
     </nav>
   );
